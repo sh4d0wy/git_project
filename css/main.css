@@ -1,0 +1,240 @@
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+    transform: translatex(0);
+    }
+}
+section{
+    background-color:#f1f3f6;
+}
+.hlist{
+    height:17vh;
+    padding-top:10px;
+    background-color: white;
+    box-shadow: 0 0 1px black;
+    width: 100vw;
+}
+
+.hcard-container{
+    display:flex;
+    text-align: center;
+    padding:12px 8px;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    
+}
+.hcard{
+    text-align:center;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    text-align: center;
+    padding:0 25px;
+    
+}
+.hcard img{
+    width:5vw;
+    /* padding:0 10px; */
+}
+.hcard:nth-child(1) img{
+    padding-left:30px;
+}
+.hcard:nth-child(10) img{
+    padding-right: 30px;
+}
+.hcard a{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.hcard a:hover{
+    color:#2874f0;
+}
+
+.slider{
+    overflow: hidden;
+    height: 280px;
+    margin-right: 20px;
+}
+.sliderinside{
+    position: absolute;
+    width:97vw;
+    overflow:hidden;
+    height: 280px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px; 
+}
+.image-slide{
+    position:absolute;
+    overflow: hidden;
+    display: flex;
+    
+}
+.image-slide img{
+    max-width:100vw;
+    display:flex;
+    animation:slide 10s infinite; 
+}
+
+.box1{
+    background-color: white;
+    max-width:100vw;
+    height: 360px;
+    margin:0 20px 20px 20px;
+    box-shadow: 0 0 1px black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.left_box1{
+    width:260px;
+    background-image: url(https://web.archive.org/web/20230410132802im_/https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90);
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    padding:28px 10px 124px;
+    display: flex;
+    justify-content: center;
+}
+.box2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    max-width: 200px;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.button{
+    padding-top:30px;
+} 
+.btn{
+    border-radius: 3px;
+    box-shadow: 0 1px 4px black;
+    color:white;
+    background-color: #2874f0;
+    padding: 10px 20px;
+}
+
+.right_box1{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.inside_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.inside_box:hover > .inside_image img{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.inside_box img{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+    padding-top:30px;
+}
+
+.inside_box p{
+    line-height: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight:600;
+    cursor:pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+/* .inside_box:nth-child(4) img{
+    width: 100px;
+} */
+
+.inside_box p:nth-child(2){
+    color:#388e3c;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.inside_box p:nth-child(3){
+    opacity:.6;
+}
+
+.left_box2{
+    background-image: url("https://web.archive.org/web/20230410130601/https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90");
+    width:260px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    padding:28px 10px 124px;
+    display: flex;
+    justify-content: center;
+    align-items:center;   
+}
+
+.inside_image img{
+    max-width: 220px;
+    height: 180px;
+}
+
+.left_box3{
+    background-image: url("https://rukminim1.flixcart.com/flap/278/278/image/e84ecf024bdc49f4.jpg?q=90");
+    width:260px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    padding:28px 10px 124px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.left_box4{
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/d2b0abe7321fddb9.jpg?q=90");
+    width:280px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    padding:28px 10px 124px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
